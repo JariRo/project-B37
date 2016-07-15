@@ -84,13 +84,48 @@ body{
     -ms-transform:skewY(-5deg);
     -o-transform:skewY(-5deg);
     transform:skewY(-5deg);
-    background-color:blue;
     z-index:2;
 }
+
+#contact_info{
+    padding: 10px 12px;
+    color:#ffffff;
+    font-size: 23px;
+    position:relative;
+    z-index:3;
+}
+
+#contact_info h1{
+    padding-top:50px;
+}
+
+#case1, #case2 {
+    margin:17px;
+    background-color:white;
+}
+
+.arrow{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:10px;
+    border-right:5px solid #e1e1e1;
+    border-bottom:5px solid #e1e1e1;
+    width:10px;
+    height:10px;
+    border-radius:27%;
+    transform: rotate(45deg);
+}
+
 
 img{
     padding:13px;
     border-radius: 20%;
+    height:70px;
+    width:70px;
+}
+
+.client_logo{
+    width:190px;
 }
 
 #icon_list, #text_list{
@@ -104,7 +139,7 @@ img{
 }
 
 #icon_list > li{
-    width:30%;
+    width:20%;
     padding:0 0 0 30px;
 }
 
@@ -116,10 +151,11 @@ img{
 
 }
 #text_list > li > p{
-    width:30%;
+    width:20%;
     padding:26px 0;
     color:#18403B;
     margin:0;
+    font-size: 90%;
 }
 
 #text_list > li{
@@ -130,14 +166,6 @@ img{
     color:#18403B;
 }
 
-#contact_info{
-    position:relative;
-    z-index:3;
-}
-
-#contact_info h1{
-    padding-top:25px;
-}
 
 ul.topnav{
     list-style-type: none;
