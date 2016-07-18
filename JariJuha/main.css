@@ -423,7 +423,10 @@ textarea.form-control::-webkit-input-placeholder {
 }
 
 /*FORM ENDS */
-/* FOOTER STARTS HERE */
+
+
+/* FOOTER STARTS HERE ........................................*/
+
 footer hr{
 	opacity: 0.2;
 	margin: 50px 0px;
@@ -438,19 +441,16 @@ footer.lightFooter hr{
 }
 
 footer{
-	text-align: center;
+	text-align: left;
 	bottom: 0px;
 	width: 100%;
 	padding-bottom: 20px;
 	position: relative;
+    font-size: 13px;
 }
 
 footer a{
 	border: 0px;	
-}
-
-.info{
-	font-size: 2em;
 }
 
 footer.lightFooter,
@@ -464,7 +464,7 @@ footer.darkFooter a{
 }
 
 footer .footer-social {
-	margin: 20px 0px;
+	margin: 10px 0px;
 }
 
 footer .footer-social li{
@@ -496,15 +496,10 @@ footer .footer-social a.instagram:hover {
 	background: #3f729b;
 }
 
-footer .copyright a{
-	border: 0px;
-	padding: 0px;
-}
 
 footer a.toTop{
-	position: absolute;
+	position: center;
 	bottom: 20px;
-	right: 20px;
 	font-size: 2.5em;
 	z-index: 100;
 	padding: 10px;
@@ -534,20 +529,25 @@ footer.darkFooter a:hover.toTop{
 	background: #000;
 }
 
-footer .copyright a:hover{
-	background: none;
-	border: 0px;
+.copyright {
+    text-align: center;
+    font-size: 13px;
 }
 
-footer.darkFooter .copyright a:hover{
-	color: #000;
+
+/*icons here............................................*/
+
+#contact_icons {
+    list-style: none;
+    padding:0;
+    margin:0;
+    display: block;
 }
-[data-icon]:before {
-    font-family: 'ElegantIcons';
-    content: attr(data-icon);
-    speak: none;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
+
+
+#contact_icons > li{
+    width:20%;
+    padding:0 0 0 30px;
+}
+
+
