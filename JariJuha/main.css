@@ -1,9 +1,9 @@
 
 @font-face {
-    
+
     font-family: "Din_regular";
     src: url(DINR_.TTF) format ("truetype");
-}    
+}
 
 body{
     padding:0;
@@ -382,7 +382,7 @@ textarea.form-control::-webkit-input-placeholder {
 	margin-top: 0px;
 }
 
-#cd-zoom-in, 
+#cd-zoom-in,
 #cd-zoom-out {
 	height: 32px;
 	width: 32px;
@@ -392,7 +392,7 @@ textarea.form-control::-webkit-input-placeholder {
 	font-size: 1.3em
 }
 
-#cd-zoom-in span, 
+#cd-zoom-in span,
 #cd-zoom-out span{
 	width: 100%;
 	float: left;
@@ -450,7 +450,7 @@ footer{
 }
 
 footer a{
-	border: 0px;	
+	border: 0px;
 }
 
 footer.lightFooter,
@@ -479,7 +479,7 @@ footer .footer-social li a{
 	border-radius: 4px;
 	border: 0px;
 	margin-top: 20px;
-	margin-bottom: 10px;	
+	margin-bottom: 10px;
 }
 
 footer .footer-social li a:hover{
@@ -488,11 +488,11 @@ footer .footer-social li a:hover{
 	border: 0px;
 }
 
-footer .footer-social a.facebook:hover { 
+footer .footer-social a.facebook:hover {
 	background: #3b5998;
 }
 
-footer .footer-social a.instagram:hover { 
+footer .footer-social a.instagram:hover {
 	background: #3f729b;
 }
 
@@ -508,11 +508,11 @@ footer a.toTop{
 }
 
 footer.lightFooter a.toTop{
-	color: #ddd;	
+	color: #ddd;
 }
 
 footer.darkFooter a.toTop{
-	color: #aaa;	
+	color: #aaa;
 }
 
 footer a:hover.toTop{
@@ -550,4 +550,13 @@ footer.darkFooter a:hover.toTop{
     padding:0 0 0 30px;
 }
 
-
+[data-icon]:before {
+    font-family: 'ElegantIcons';
+    content: attr(data-icon);
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
