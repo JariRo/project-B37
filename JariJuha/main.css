@@ -260,6 +260,11 @@ img{
     padding:0 23px 20px 0 ;
 }
 
+#icon_text_lists{
+    width:95%;
+    margin:auto;
+}
+
 .text_color{
     color:#18403B;
     margin-bottom:0px;
@@ -479,7 +484,7 @@ hr{
   and (-webkit-min-device-pixel-ratio: 3) {
     #big_head{
         margin:0 auto;
-        width:90%;
+        width:85%;
 }
 
 /* ----------- iPad 3 and 4 ----------- */
