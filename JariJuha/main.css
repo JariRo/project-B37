@@ -34,7 +34,7 @@ body{
 }
 
 #big_head{
-    margin:0;
+    margin:0 auto;
     width:100%;
     text-align: center;
 }
@@ -477,7 +477,9 @@ hr{
   and (min-device-width: 414px)
   and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 3) {
-       /* BÖRJA HÄR */
+    #big_head{
+        margin:0 auto;
+        width:90%;
 }
 
 /* ----------- iPad 3 and 4 ----------- */
