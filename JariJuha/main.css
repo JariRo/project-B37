@@ -38,12 +38,31 @@ body{
     width:100%;
     text-align: center;
 }
+
+.icon{
+    position:fixed;
+    display:inline-block;
+    right:0;
+    top:0;
+    padding:14px 16px;
+    margin:0 auto;
+    z-index: 8;
+}
+
+.icon a{
+    color:#f2f2f2;
+    text-align:center;
+    text-decoration:none;
+    transition:0.3s;
+    font-size:20px;
+}
+
 ul.topnav{
+    position:relative;
     list-style-type: none;
     margin:0 auto;
     padding:0;
     overflow:hidden;
-    background-color:#333;
 }
 
 input{
@@ -52,28 +71,42 @@ input{
 
 /* responsive */
 ul.topnav.responsive{
-    position:relative;
-}
-ul.topnav.responsive li.icon{
-    position:absolute;
-    right:0;
+    position:fixed;
+    opacity:0.7;
     top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:5;
+    background-size:cover;
+    background-color:#18403B;
 }
+
+ul.topnav.responsive li:nth-child(1) a{
+    padding-top:90px;
+}
+
 ul.topnav.responsive li{
     float:none;
     display:inline;
 }
 ul.topnav.responsive li a{
+    position:relative;
     display:block;
+    font-size:25px;
+    padding:35px 0 35px 0;
+    z-index:6;
 }
 
 /* navigation des */
 ul.topnav li{
     float:left;
 }
+
 ul.topnav li{
     display:none;
 }
+
 ul.topnav li a{
     display:inline-block;
     color:#f2f2f2;
@@ -83,12 +116,9 @@ ul.topnav li a{
     transition:0.3s;
     font-size:17px;
 }
+
 ul.topnav li a:hover {
     background-color:#111;
-}
-ul.topnav li.icon{
-    display:inline-block;
-    float:right;
 }
 
 /* header ENDs */
@@ -262,7 +292,7 @@ img{
 
 #icon_text_lists{
     width:95%;
-    margin:auto;
+    margin:0 auto;
 }
 
 .text_color{
@@ -488,15 +518,13 @@ hr{
 
 /* mediaqueries */
 
-/* ----------- iPhone 6+ ----------- */
-/* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 414px)
-  and (max-device-width: 736px)
-  and (-webkit-min-device-pixel-ratio: 3) {
-    #big_head{
-        margin:0 auto;
-        width:85%;
+/* ----------- Retina Screens ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi){
+      /* BÖRJA HÄR */
 }
 
 /* ----------- iPad 3 and 4 ----------- */
@@ -505,15 +533,28 @@ hr{
   and (min-device-width: 768px)
   and (max-device-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 2) {
-       /* BÖRJA HÄR */
+    #big_head {
+        margin:0 auto;
+        width:85%;
+    }
+
+    #icon_text_lists {
+        width:40%;
+    }
 }
 
+/* ----------- iPhone 6+ ----------- */
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    #big_head {
+        margin:0 auto;
+        width:85%;
+    }
 
-/* ----------- Retina Screens ----------- */
-@media screen
-  and (min-device-width: 1200px)
-  and (max-device-width: 1600px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi){
-      /* BÖRJA HÄR */
+    #icon_text_lists {
+        width:80%;
+    }
 }
