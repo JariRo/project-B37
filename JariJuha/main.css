@@ -7,14 +7,14 @@
 
 /* Genereal css rules */
 body{
+    margin:0;
     padding:0;
-    margin:0 auto;
-    font-family: 'DIN_regular', 'Montserrat', sans-serif;
+    font-family:'BlinkMacSystemFont','DIN_regular', 'Montserrat', sans-serif;
     color:#f5f5f5;
 }
 
 /* content */
-#wrapper{
+#second_wrap{
     background:url("water.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -524,43 +524,123 @@ hr{
   and (max-device-width: 1600px)
   and (-webkit-min-device-pixel-ratio: 1) {
 
-body {
-          width: 75%;
+#wrapper {
+          width: 100%;
           float: right;
       }
 
+      #second_wrap{
+          width:75%;
+          float:right;
+      }
 
-#icon_list > li{
-    width:20%;
-    padding:18px 0px 20px 0px ;
+      #text_list{
+        position:relative;
+        left:40px;
+        top:75px;
+        margin:0 auto;
+        display: inline-block;
+        float:none;
+        padding:0;
+      }
+
+      #text_list > li{
+          padding:5px 62px 5px 62px;
+          float:left;
+          height:110px;
+      }
+
+      #icon_list > li{
+          position:relative;
+          bottom:90px;
+          margin:0 auto;
+          display:inline-block;
+          float:none;
+          padding:0;
+      }
+
+      #icon_list{
+          padding:0;
+          padding:10px 0px 10px 0px;
+      }
+
+    #icon_text_lists{
+        width:100%;
+        padding-top:20px;
+    }
+
+    #front_text{
+        height:330px;
+    }
+
+    #big_head{
+        padding-top:60px;
+        width:70%;
+    }
+    /*
+    ul.topnav{
+        position:fixed;;
+        list-style-type: none;
+        width:100%;
+        overflow:visible;
+        float:left;
+        display:inline-block;
+    }
+    */
+    ul.topnav{
+        padding-top:150px;
+    }
+    ul.topnav li{
+        display:block;
+        float:none;
+    }
+
+    ul.topnav li a{
+    padding:40px 250px 40px 120px;
+    font-size: 25px;
+    color:black;
+    font-weight: 350;
+
+    }
+
+    nav{
+        position:fixed;
+        width:25%;
+
+    }
+
+    #about_info{
+        padding:50px 0 40px 0;
+    }
+    #about_info > p{
+        padding-top:30px;
+        width:70%;
+        margin:0 auto;
+        font-family: BlinkMacSystemFont;
+    }
+
+    #contact_info{
+        padding-top:50px;
+    }
+
+    #contact_info > h1{
+        padding-bottom:30px;
+    }
 }
 
-
-}
 
 
 
 /* ----------- Retina Screens ----------- */
 @media screen
-  and (min-device-width: 1025px)
+  and (min-device-width: 1200px)
   and (max-device-width: 1600px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (min-resolution: 192dpi){
       /* BÖRJA HÄR */
 
-body {
-          width: 75%;
-          float: right;
-      }
-
-
-#icon_list > li{
-    width:20%;
-    padding:18px 0px 20px 0px ;
 }
 
-
-}
 
 /* ----------- iPad 3 and 4 ----------- */
 /* Portrait and Landscape */
