@@ -564,6 +564,18 @@ hr{
           padding:10px 0px 10px 0px;
       }
 
+#icon_list > li{
+    width:20%;
+    padding:18px 0px 20px 0px ;
+}
+ul.topnav{
+    position: fixed;
+    list-style-type: none;
+    margin:0 auto;
+    padding:0;
+    overflow: visible;
+    float: left;
+
     #icon_text_lists{
         width:100%;
         padding-top:20px;
@@ -628,19 +640,22 @@ hr{
     }
 }
 
-
+}
 
 
 /* ----------- Retina Screens ----------- */
 @media screen
   and (min-device-width: 1200px)
   and (max-device-width: 1600px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi){
+  and (-webkit-min-device-pixel-ratio: 2){
       /* BÖRJA HÄR */
 
-}
+body {
+          width: 75%;
+          float: right;
+      }
 
+}
 
 /* ----------- iPad 3 and 4 ----------- */
 /* Portrait and Landscape */
