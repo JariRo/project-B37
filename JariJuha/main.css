@@ -518,6 +518,28 @@ hr{
 
 /* mediaqueries */
 
+/* ----------- Non-Retina Screens ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+body {
+          width: 75%;
+          float: right;
+      }
+
+
+#icon_list > li{
+    width:20%;
+    padding:18px 0px 20px 0px ;
+}
+
+
+}
+
+
+
 /* ----------- Retina Screens ----------- */
 @media screen
   and (min-device-width: 1025px)
