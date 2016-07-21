@@ -525,6 +525,19 @@ hr{
   and (-webkit-min-device-pixel-ratio: 2)
   and (min-resolution: 192dpi){
       /* BÖRJA HÄR */
+      
+body {
+          width: 75%;
+          float: right;
+      }
+      
+
+#icon_list > li{
+    width:20%;
+    padding:18px 0px 20px 0px ;
+}
+      
+      
 }
 
 /* ----------- iPad 3 and 4 ----------- */
