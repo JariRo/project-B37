@@ -332,7 +332,7 @@ textarea.form-control{
 	color: rgba(256,256,256,0.75);
 	padding: 20px 30px;
     width: 60%;
- 
+
 }
 
 input.form-control:focus,
@@ -376,7 +376,7 @@ textarea.form-control::-webkit-input-placeholder {
 
 .send-div{
 	margin-top: 40px;
-    
+
 }
 
 .send-div button{
@@ -520,24 +520,24 @@ hr{
 
 /* ----------- Retina Screens ----------- */
 @media screen
-  and (min-device-width: 1200px)
+  and (min-device-width: 1025px)
   and (max-device-width: 1600px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (min-resolution: 192dpi){
       /* BÖRJA HÄR */
-      
+
 body {
           width: 75%;
           float: right;
       }
-      
+
 
 #icon_list > li{
     width:20%;
     padding:18px 0px 20px 0px ;
 }
-      
-      
+
+
 }
 
 /* ----------- iPad 3 and 4 ----------- */
