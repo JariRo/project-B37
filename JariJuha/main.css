@@ -545,18 +545,20 @@ hr{
       }
 
       #text_list > li{
-          padding:5px 62px 5px 62px;
+          padding:5px 67px 5px 67px;
           float:left;
           height:110px;
       }
 
       #icon_list > li{
           position:relative;
-          bottom:90px;
+          bottom:110px;
           margin:0 auto;
           display:inline-block;
           float:none;
           padding:0;
+          width:20%;
+          padding:18px 0px 20px 0px ;
       }
 
       #icon_list{
@@ -564,10 +566,6 @@ hr{
           padding:10px 0px 10px 0px;
       }
 
-#icon_list > li{
-    width:20%;
-    padding:18px 0px 20px 0px ;
-}
 ul.topnav{
     position: fixed;
     list-style-type: none;
@@ -575,6 +573,7 @@ ul.topnav{
     padding:0;
     overflow: visible;
     float: left;
+}
 
     #icon_text_lists{
         width:100%;
@@ -589,16 +588,7 @@ ul.topnav{
         padding-top:60px;
         width:70%;
     }
-    /*
-    ul.topnav{
-        position:fixed;;
-        list-style-type: none;
-        width:100%;
-        overflow:visible;
-        float:left;
-        display:inline-block;
-    }
-    */
+
     ul.topnav{
         padding-top:150px;
     }
@@ -649,11 +639,6 @@ ul.topnav{
   and (max-device-width: 1600px)
   and (-webkit-min-device-pixel-ratio: 2){
       /* BÖRJA HÄR */
-
-body {
-          width: 75%;
-          float: right;
-      }
 
 }
 
