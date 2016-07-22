@@ -14,29 +14,26 @@ body{
 }
 
 /* content */
+
 #second_wrap{
     background:url("water.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    position: relative;
 }
 
 /* header */
-#front_text{
-    /*
-    position:absolute;
-    top:214px;
-    */
+.front_text{
     padding:200px 0;
-    margin:auto;
     width:100%;
 }
+/* startsidan - text */
 
 #big_head{
-    margin:0 auto;
-    width:100%;
-    text-align: center;
+    width:100%; 
+    margin: 0 auto;
 }
 
 .icon{
@@ -524,6 +521,38 @@ hr{
   and (max-device-width: 1600px)
   and (-webkit-min-device-pixel-ratio: 1) {
 
+      
+.video {
+      position: relative;
+      top: 100%; left: 50%;
+      z-index: 2;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      transform: translate(-50%, -50%);
+       -webkit-filter:blur(2px);
+    }
+
+/* header */
+.front_text{
+    padding:200px 0;
+    width:100%;
+}
+/* startsidan - text */
+
+#big_head{
+    width:100%; 
+    margin: 0 auto;
+}
+
+/* startsidan - text H1 ska synas */
+.showme    {
+    position: relative;
+      z-index: 3;
+      text-align: center;
+}
+      
 #wrapper {
           width: 100%;
           float: right;
