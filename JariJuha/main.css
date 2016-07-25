@@ -32,7 +32,7 @@ body{
 /* startsidan - text */
 
 #big_head{
-    width:100%; 
+    width:100%;
     margin: 0 auto;
 }
 
@@ -521,17 +521,28 @@ hr{
   and (max-device-width: 1600px)
   and (-webkit-min-device-pixel-ratio: 1) {
 
-      
+#forVideo{
+    -webkit-transform:skewY(-7.5deg);
+    -moz-transform:skewY(-7.5deg);
+    -ms-transform:skewY(-7.5deg);
+    -o-transform:skewY(-7.5deg);
+    transform:skewY(-7.5deg);
+
+}
+
 .video {
       position: relative;
       top: 100%; left: 50%;
       z-index: 2;
       min-width: 100%;
       min-height: 100%;
-      width: auto;
+      width: 100%;
       height: auto;
-      transform: translate(-50%, -50%);
-       -webkit-filter:blur(2px);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      -webkit-filter:blur(2px);
     }
 
 /* header */
@@ -542,7 +553,7 @@ hr{
 /* startsidan - text */
 
 #big_head{
-    width:100%; 
+    width:100%;
     margin: 0 auto;
 }
 
@@ -552,7 +563,7 @@ hr{
       z-index: 3;
       text-align: center;
 }
-      
+
 #wrapper {
           width: 100%;
           float: right;
