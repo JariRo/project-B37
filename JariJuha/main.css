@@ -513,7 +513,7 @@ hr{
 }
 
 
-/* mediaqueries */
+/* MEDIAQUERIES */
 
 /* ----------- Non-Retina Screens ----------- */
 @media screen
@@ -521,111 +521,27 @@ hr{
   and (max-device-width: 1600px)
   and (-webkit-min-device-pixel-ratio: 1) {
 
-#forVideo{
-    position:relative;
-    top:-120%;
-    overflow: hidden;
-    /*
-    -webkit-transform:skewY(-7.5deg);
-    -moz-transform:skewY(-7.5deg);
-    -ms-transform:skewY(-7.5deg);
-    -o-transform:skewY(-7.5deg);
-    transform:skewY(-7.5deg);
-    overflow: hidden;
-    */
-}
-
-.video {
-    width:140%;
-    /*
-      position: relative;
-      top: 100%; left: 50%;
-      z-index: 2;
-      width: 100%;
-      height: auto;
-      -webkit-transform:skewY(7.5deg);
-      -moz-transform:skewY(7.5deg);
-      -ms-transform:skewY(7.5deg);
-      -o-transform:skewY(7.5deg);
-      transform:skewY(7.5deg);
-      overflow:hidden;
-      */
-
+/***************************************/
+/* Frontpage Video - START */
+    #forVideo{
+        height:700%;
+        position:relative;
+        top:-120%;
+        overflow: hidden;
     }
 
-/* header */
-.front_text{
-    padding:200px 0;
-    width:100%;
-}
-/* startsidan - text */
+    video {
+        width:139.6%;
+        object-fit: cover;
+        }
+/* Frontpage Video - END */
+/***************************************/
 
-#big_head{
-    width:100%;
-    margin: 0 auto;
-}
-
-/* startsidan - text H1 ska synas */
-.showme    {
-    position: relative;
-      z-index: 3;
-      text-align: center;
-}
-
-#wrapper {
-          width: 100%;
-          float: right;
-      }
-
-      #second_wrap{
-          width:75%;
-          float:right;
-      }
-
-      #text_list{
-        position:relative;
-        left:40px;
-        top:75px;
-        margin:0 auto;
-        display: inline-block;
-        float:none;
-        padding:0;
-      }
-
-      #text_list > li{
-          padding:5px 67px 5px 67px;
-          float:left;
-          height:110px;
-      }
-
-      #icon_list > li{
-          position:relative;
-          bottom:110px;
-          margin:0 auto;
-          display:inline-block;
-          float:none;
-          padding:0;
-          width:20%;
-          padding:18px 0px 20px 0px ;
-      }
-
-      #icon_list{
-          padding:0;
-          padding:10px 0px 10px 0px;
-      }
-
-ul.topnav{
-    position: fixed;
-    list-style-type: none;
-    margin:0 auto;
-    padding:0;
-    overflow: visible;
-    float: left;
-}
-
-    #icon_text_lists{
+/***************************************/
+/* Header - START */
+    .front_text{
+        padding:200px 0;
         width:100%;
-        padding-top:20px;
     }
 
     #front_text{
@@ -633,18 +549,33 @@ ul.topnav{
     }
 
     #big_head{
+        margin: 0 auto;
         padding-top:60px;
         width:70%;
     }
 
-    ul.topnav{
-        padding-top:150px;
+    .showme{
+        position: relative;
+        z-index: 3;
+        text-align: center;
     }
+
+    /* Navigation */
+    ul.topnav{
+        position: fixed;
+        list-style-type: none;
+        margin:0 auto;
+        padding:150px 0 0 0;
+        overflow: visible;
+        float: left;
+    }
+    /* Each list-item link in the menu */
     ul.topnav li{
         display:block;
         float:none;
     }
 
+    /*The link which contains the list-item */
     ul.topnav li a{
     padding:40px 250px 40px 120px;
     font-size: 25px;
@@ -658,7 +589,68 @@ ul.topnav{
         width:25%;
 
     }
+/* Header - END */
+/****************************************/
 
+/***************************************/
+/* The big wrapper (nav + content) - START */
+    #wrapper {
+              width: 100%;
+              float: right;
+          }
+/* The big wrapper - END */
+/****************************************/
+
+/****************************************/
+/* The second wrapper (content) - START */
+      #second_wrap{
+          width:75%;
+          float:right;
+      }
+
+      /* Text-list: TECH, MANAGEMENT, SAVE MONEY */
+      #text_list{
+        position:relative;
+        left:40px;
+        top:75px;
+        margin:0 auto;
+        display: inline-block;
+        float:none;
+        padding:0;
+      }
+
+      /* Each item in the Text-list: TECH, MANAGEMENT, SAVE MONEY */
+      #text_list > li{
+          padding:5px 67px 5px 67px;
+          float:left;
+          height:110px;
+      }
+
+      /* Icon-list: Computer, Cog-wheels, Clock & cash */
+      #icon_list{
+          padding:0;
+          padding:10px 0px 10px 0px;
+      }
+
+      /* Each icon in the Icon-list: Computer, Cog-wheels, Clock & cash */
+      #icon_list > li{
+          position:relative;
+          bottom:110px;
+          margin:0 auto;
+          display:inline-block;
+          float:none;
+          padding:0;
+          width:20%;
+          padding:18px 0px 20px 0px ;
+      }
+
+      /* Box with both text-list & icon-list in it */
+      #icon_text_lists{
+          width:100%;
+          padding-top:20px;
+      }
+
+      /*Information about us */
     #about_info{
         padding:50px 0 40px 0;
     }
@@ -669,6 +661,7 @@ ul.topnav{
         font-family: BlinkMacSystemFont;
     }
 
+    /* our contact information*/
     #contact_info{
         padding-top:50px;
     }
@@ -678,7 +671,8 @@ ul.topnav{
     }
 }
 
-}
+/* The second wrapper (content) - END */
+/****************************************/
 
 
 /* ----------- Retina Screens ----------- */
