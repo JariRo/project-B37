@@ -21,31 +21,24 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    position: relative;
 }
 
 /* header */
 .front_text{
     padding:200px 0;
+    margin:auto;
     width:100%;
 }
 /* startsidan - text */
 
 #big_head{
+    margin:0 auto;
     width:100%;
-    margin: 0 auto;
+    text-align: center;
 }
 
 #forVideo{
     display:none;
-}
-
-#second_wrap > #front_text > #logo{
-    width:210px;
-    height:100px;
-    border:solid 2px white;
-    margin:0 auto;
-
 }
 
 .icon{
@@ -128,6 +121,10 @@ ul.topnav li a{
 
 ul.topnav li a:hover {
     background-color:#111;
+}
+
+#loggan{
+    display:none;
 }
 
 /* header ENDs */
@@ -578,7 +575,7 @@ hr{
         position: fixed;
         list-style-type: none;
         margin:0 auto;
-        padding:150px 0 0 0;
+        padding:45px 0 0 0;
         overflow: visible;
         float: left;
     }
@@ -590,11 +587,30 @@ hr{
 
     /*The link which contains the list-item */
     ul.topnav li a{
-    padding:40px 250px 40px 120px;
+    padding:50px 20% 50px 120px;
     font-size: 25px;
     color:black;
     font-weight: 350;
+    }
 
+    #loggan{
+        display:block;
+        width:25%;
+        height:25%;
+    }
+
+    ul.topnav li:nth-child(1){
+        position:relative;
+        top:-65px;
+        left:-70px;
+    }
+
+    ul.topnav li:nth-child(1) > a{
+        padding-bottom:0;
+    }
+
+    ul.topnav li:nth-child(2){
+        display:none;
     }
 
     nav{
