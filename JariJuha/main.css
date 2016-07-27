@@ -613,6 +613,12 @@ hr{
         display:none;
     }
 
+    ul.topnav li a:hover{
+        background:none;
+        text-decoration: underline;
+        font-size: 26.5px;
+    }
+
     nav{
         position:fixed;
         width:25%;
@@ -698,6 +704,8 @@ hr{
     #contact_info > h1{
         padding-bottom:30px;
     }
+
+
 }
 
 /* The second wrapper (content) - END */
