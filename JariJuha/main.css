@@ -36,6 +36,18 @@ body{
     margin: 0 auto;
 }
 
+#forVideo{
+    display:none;
+}
+
+#second_wrap > #front_text > #logo{
+    width:210px;
+    height:100px;
+    border:solid 2px white;
+    margin:0 auto;
+
+}
+
 .icon{
     position:fixed;
     display:inline-block;
@@ -524,6 +536,7 @@ hr{
 /***************************************/
 /* Frontpage Video - START */
     #forVideo{
+        display:block;
         height:700%;
         position:relative;
         top:-120%;
@@ -531,7 +544,7 @@ hr{
     }
 
     video {
-        width:139.6%;
+        width:145.9%;
         object-fit: cover;
         }
 /* Frontpage Video - END */
