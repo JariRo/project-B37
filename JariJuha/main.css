@@ -704,6 +704,28 @@ hr{
     #contact_info > h1{
         padding-bottom:30px;
     }
+      
+      
+      .case{
+          width:29%;
+          display:inline-block;
+      }
+      
+      .case > p, .case > h3{
+          padding:17px;
+      }
+      
+      hr{
+          margin-top:80px;
+          width:85%;
+      }
+      
+      .copyright{
+          margin-left:40%;
+      }
+      
+      
+
 
 
 }
